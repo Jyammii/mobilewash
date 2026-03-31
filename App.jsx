@@ -1,10 +1,10 @@
 import React from 'react';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
-import { AuthProvider } from './context/AuthContext';
-import AppNavigator from './navigation/AppNavigator';
+import { AuthProvider } from './src/context/AuthContext';
+import AppNavigator from './src/navigation/AppNavigator';
 
-export default function App() {
+const App = () => {
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>
       <SafeAreaProvider>
@@ -14,4 +14,6 @@ export default function App() {
       </SafeAreaProvider>
     </GestureHandlerRootView>
   );
-}
+};
+
+export default App;
